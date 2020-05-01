@@ -1,0 +1,24 @@
+sudo sysctl net.mptcp.mptcp_path_manager=’binder’
+
+sudo sysctl net.mptcp.mptcp_path_manager=’fullmesh’
+
+sudo sysctl net.mptcp.mptcp_scheduler='default'
+
+
+
+
+Normal TCP FPS:
+55.94 on loop back interface.
+50.47 on the topology mentioned.
+
+MPTCP FPS:
+52.97 on topology mentioned.
+
+
+sudo sysctl net.mptcp.mptcp_scheduler='redundant'
+
+sudo sysctl net.mptcp.mptcp_scheduler='roundrobin'
+
+
+
+Come directly to your testbed design, scenario, code, innovation and results. 

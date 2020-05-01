@@ -1,0 +1,16 @@
+To Run the program:
+1)Run pip3 install -r requirements.txt to install dependencies such as opencv etc.
+2) Create the topology, by executing "sudo python2 mp-topo.py", this will launch the mininet VM.
+3) In VM console, please enter "xterm h1 h2", thereby opening 2 xterm terminals, for h1 and h2.
+4) Please naviagte to "Without Buffering" directory.
+
+	Either h1 will act as the sender or h2.
+
+Assuming h1 acts as the sender and h2 as the reciever.
+
+5)In h2 xterm window enter, python3 main.py reciever <h2's IP> <Port to recieve frames>
+6)In h1 xterm window enter, python3 main.py sender <h2's IP> <Port to recieve frames>
+
+
+7)The frames are being recieved via both paths and displayed on screen if mininet has sufficient permissions.
+
